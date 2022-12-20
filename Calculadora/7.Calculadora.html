@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="./7.Tarea.css" />
+  </head>
+  <body>
+    <header>Calculadora de operaciones básicas</header>
+    <form class="father" name="calculator">
+        <div class="iconos">
+          <img src="https://cdn-icons-png.flaticon.com/512/73/73076.png" class="images">
+        </div>
+      <div class="calculator">
+        <div class="Numbers">
+          <input type="textfield" id="xd"  class="screen" name="salida"/>
+          <!---->
+        </div>
+        <div class="Numbers">
+          <input type="button" class="boton" value="1" onclick="document.calculator.salida.value+='1'">
+          <input type="button" class="boton" value="2" onclick="document.calculator.salida.value+='2'">
+          <input type="button" class="boton" value="3" onclick="document.calculator.salida.value+='3'">
+          <input type="button" class="boton" value="√" onclick="raiz()">
+          <input type="button" class="boton" value="^" onclick="potencia()">
+        </div>
+        <div class="Numbers">
+          <input type="button" class="boton" value="4" onclick="document.calculator.salida.value+='4'">
+          <input type="button" class="boton" value="5" onclick="document.calculator.salida.value+='5'">
+          <input type="button" class="boton" value="6" onclick="document.calculator.salida.value+='6'">
+          <input type="button" class="boton" value="x" onclick="document.calculator.salida.value+='*'">
+          <input type="button" class="boton" value="/" onclick="document.calculator.salida.value+='/'">
+        </div>
+        <div class="Numbers">
+          <input type="button" class="boton" value="7" onclick="document.calculator.salida.value+='7'">
+          <input type="button" class="boton" value="8" onclick="document.calculator.salida.value+='8'">
+          <input type="button" class="boton" value="9" onclick="document.calculator.salida.value+='9'">
+          <input type="button" class="boton" value="+" onclick="document.calculator.salida.value+='+'">
+          <input type="button" class="boton" value="-" onclick="document.calculator.salida.value+='-'">
+        </div>
+        <div class="Numbers">
+          <input type="button" class="boton" value="0" onclick="document.calculator.salida.value+='0'">
+          <input type="button" class="boton" value="." onclick="document.calculator.salida.value+='.'">
+          <input type="reset" id="help" class="boton" value="c">
+          <input type="button" class="boton" value="%" onclick="document.calculator.salida.value+='%'">
+          <input type="button" id="igual" class="boton" value="=" onclick="document.calculator.salida.value=eval(document.calculator.salida.value)">
+        </div>
+      </div>
+      <div class="iconos">
+        <img src="https://cdn-icons-png.flaticon.com/512/73/73076.png" class="images">
+      </div>
+    </section>
+    <section id="resultado"></section>
+  </body>
+  <script src="./7.Tarea.js"></script>
+</html>
